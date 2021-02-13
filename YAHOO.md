@@ -70,7 +70,7 @@ Description | Module Name
 [Cash Flow Statement History (Annual)](#cash-flow-statement-history-annual) | cashflowStatementHistory
 [Cash Flow Statement History (Quarterly)](#cash-flow-statement-history-quarterly) | cashflowStatementHistoryQuarterly
 [Key Statistics](#key-statistics) | defaultKeyStatistics
-[Earnigs](#earnings) | earnings
+[Earnings](#earnings) | earnings
 [Earnings History](#earnigs-history) | earningsHistory
 [Earnings Trend](#earnings-trend) | earningsTrend
 [ESG Scores](#esg-scores) | esgScores
@@ -111,40 +111,40 @@ The **assetProfile** module displays data from the company's [Profile](https://f
 `/quoteSummary/result/assetProfile` + **Nested Data** (*optional*)  
 
 **Nested Data:**  
-> *Company Address: Street*  
+> **Company Address: Street**  
 > /`address1`  
 > 
-> *Company Address: City*  
+> **Company Address: City**  
 > /`city`  
 > 
-> *Company Address: Zip Code*  
+> **Company Address: Zip Code**  
 > /`zip`  
 > 
-> *Company Address: Country*  
+> **Company Address: Country**  
 > /`country`  
 > 
-> *Company Phone Number*  
+> **Company Phone Number**  
 > /`phone`  
 > 
-> *Company Fax*  
+> **Company Fax**  
 > /`fax`  
 > 
-> *Company Website*  
+> **Company Website**  
 > /`website`  
 > 
-> *Company Market Industry*  
+> **Company Market Industry**  
 > /`industry`  
 > 
-> *Company Market Sector*  
+> **Company Market Sector**  
 > /`sector`  
 > 
-> *Company Business Summary*  
+> **Company Business Summary**  
 > /`longBusinessSummary`  
 > 
-> *Company Full-Time Employees*  
+> **Company Full-Time Employees**  
 > /`fullTimeEmployees`  
 > 
-> *Company Officers*  
+> **Company Officers**  
 > /`companyOfficers`  
 
 
@@ -157,168 +157,168 @@ Learn more about corporate balance sheets on [Investopedia](https://www.investop
 `/quoteSummary/result/balanceSheetHistory` + **Nested Data** (*optional*)  
 
 **Nested Data:**  
-> *Balance Sheet Statements (All Data)*  
+> **Balance Sheet Statements (All Data)**  
 > /`balanceSheetStatements`  
 > 
-> *Maximum number of seconds results of the Balance Sheets Statements query can be cached*  
+> **Max Age** *Maximum number of seconds results of the Balance Sheets Statements query can be cached*  
 > /`balanceSheetStatements`/`maxAge`  
 > 
-> *Balance Sheets Statements End Date*  
+> **Balance Sheets Statements End Date**  
 > /`balanceSheetStatements`/`endDate`  
 > /`balanceSheetStatements`/`endDate`/`raw`  
 > /`balanceSheetStatements`/`endDate`/`fmt`  
 > 
-> *Balance Sheets Statements Cash*  
+> **Balance Sheets Statements Cash**  
 > /`balanceSheetStatements`/`cash`  
 > /`balanceSheetStatements`/`cash`/`raw`  
 > /`balanceSheetStatements`/`cash`/`fmt`  
 > /`balanceSheetStatements`/`cash`/`longfmt`  
 > 
-> *Balance Sheets Statements Short Term Investments*  
+> **Balance Sheets Statements Short Term Investments**  
 > /`balanceSheetStatements`/`shortTermInvestments`  
 > /`balanceSheetStatements`/`shortTermInvestments`/`raw`  
 > /`balanceSheetStatements`/`shortTermInvestments`/`fmt`  
 > /`balanceSheetStatements`/`shortTermInvestments`/`longfmt`  
 > 
-> *Balance Sheets Statements SNet Receivables*  
+> **Balance Sheets Statements SNet Receivables**  
 > /`balanceSheetStatements`/`netReceivables`  
 > /`balanceSheetStatements`/`netReceivables`/`raw`  
 > /`balanceSheetStatements`/`netReceivables`/`fmt`  
 > /`balanceSheetStatements`/`netReceivables`/`longfmt`  
 > 
-> *Balance Sheets Statements Inventory*  
+> **Balance Sheets Statements Inventory**  
 > /`balanceSheetStatements`/`inventory`  
 > /`balanceSheetStatements`/`inventory`/`raw`  
 > /`balanceSheetStatements`/`inventory`/`fmt`  
 > /`balanceSheetStatements`/`inventory`/`longfmt`  
 > 
-> *Balance Sheets Statements Total Current Assets*  
+> **Balance Sheets Statements Total Current Assets**  
 > /`balanceSheetStatements`/`totalCurrentAssets`  
 > /`balanceSheetStatements`/`totalCurrentAssets`/`raw`  
 > /`balanceSheetStatements`/`totalCurrentAssets`/`fmt`  
 > /`balanceSheetStatements`/`totalCurrentAssets`/`longfmt`  
 > 
-> *Balance Sheets Statements Property Plant Equipment*  
+> **Balance Sheets Statements Property Plant Equipment**  
 > /`balanceSheetStatements`/`propertyPlantEquipment`  
 > /`balanceSheetStatements`/`propertyPlantEquipment`/`raw`  
 > /`balanceSheetStatements`/`propertyPlantEquipment`/`fmt`  
 > /`balanceSheetStatements`/`propertyPlantEquipment`/`longfmt`  
 > 
-> *Balance Sheets Statements Goodwill*  
+> **Balance Sheets Statements Goodwill**  
 > /`balanceSheetStatements`/`goodwill`  
 > /`balanceSheetStatements`/`goodwill`/`raw`  
 > /`balanceSheetStatements`/`goodwill`/`fmt`  
 > /`balanceSheetStatements`/`goodwill`/`longfmt`  
 > 
-> *Balance Sheets Statements Intangible Assets*  
+> **Balance Sheets Statements Intangible Assets**  
 > /`balanceSheetStatements`/`intangibleAssets`  
 > /`balanceSheetStatements`/`intangibleAssets`/`raw`  
 > /`balanceSheetStatements`/`intangibleAssets`/`fmt`  
 > /`balanceSheetStatements`/`intangibleAssets`/`longfmt`  
 > 
-> *Balance Sheets Statements Other Assets*  
+> **Balance Sheets Statements Other Assets**  
 > /`balanceSheetStatements`/`otherAssets`  
 > /`balanceSheetStatements`/`otherAssets`/`raw`  
 > /`balanceSheetStatements`/`otherAssets`/`fmt`  
 > /`balanceSheetStatements`/`otherAssets`/`longfmt`  
 > 
-> *Balance Sheets Statements Deferred Long Term Asset Charges*  
+> **Balance Sheets Statements Deferred Long Term Asset Charges**  
 > /`balanceSheetStatements`/`deferredLongTermAssetCharges`  
 > /`balanceSheetStatements`/`deferredLongTermAssetCharges`/`raw`  
 > /`balanceSheetStatements`/`deferredLongTermAssetCharges`/`fmt`  
 > /`balanceSheetStatements`/`deferredLongTermAssetCharges`/`longfmt`  
 > 
-> *Balance Sheets Statements Total Assets*  
+> **Balance Sheets Statements Total Assets**  
 > /`balanceSheetStatements`/`totalAssets`  
 > /`balanceSheetStatements`/`totalAssets`/`raw`  
 > /`balanceSheetStatements`/`totalAssets`/`fmt`  
 > /`balanceSheetStatements`/`totalAssets`/`longfmt`  
 > 
-> *Balance Sheets Statements Accounts Payable*  
+> **Balance Sheets Statements Accounts Payable**  
 > /`balanceSheetStatements`/`accountsPayable`  
 > /`balanceSheetStatements`/`accountsPayable`/`raw`  
 > /`balanceSheetStatements`/`accountsPayable`/`fmt`  
 > /`balanceSheetStatements`/`accountsPayable`/`longfmt`  
 > 
-> *Balance Sheets Statements Other Current Liabilities*  
+> **Balance Sheets Statements Other Current Liabilities**  
 > /`balanceSheetStatements`/`otherCurrentLiab`  
 > /`balanceSheetStatements`/`otherCurrentLiab`/`raw`  
 > /`balanceSheetStatements`/`otherCurrentLiab`/`fmt`  
 > /`balanceSheetStatements`/`otherCurrentLiab`/`longfmt`  
 > 
-> *Balance Sheets Statements Long Term Debt*  
+> **Balance Sheets Statements Long Term Debt**  
 > /`balanceSheetStatements`/`longTermDebt`  
 > /`balanceSheetStatements`/`longTermDebt`/`raw`  
 > /`balanceSheetStatements`/`longTermDebt`/`fmt`  
 > /`balanceSheetStatements`/`longTermDebt`/`longfmt`  
 > 
-> *Balance Sheets Statements Other Liabilities*  
+> **Balance Sheets Statements Other Liabilities**  
 > /`balanceSheetStatements`/`otherLiab`  
 > /`balanceSheetStatements`/`otherLiab`/`raw`  
 > /`balanceSheetStatements`/`otherLiab`/`fmt`  
 > /`balanceSheetStatements`/`otherLiab`/`longfmt`  
 > 
-> *Balance Sheets Statements Total Current Liabilities*  
+> **Balance Sheets Statements Total Current Liabilities**  
 > /`balanceSheetStatements`/`totalCurrentLiabilities`  
 > /`balanceSheetStatements`/`totalCurrentLiabilities`/`raw`  
 > /`balanceSheetStatements`/`totalCurrentLiabilities`/`fmt`  
 > /`balanceSheetStatements`/`totalCurrentLiabilities`/`longfmt`  
 > 
-> *Balance Sheets Statements Total Liabilities*  
+> **Balance Sheets Statements Total Liabilities**  
 > /`balanceSheetStatements`/`totalLiab`  
 > /`balanceSheetStatements`/`totalLiab`/`raw`  
 > /`balanceSheetStatements`/`totalLiab`/`fmt`  
 > /`balanceSheetStatements`/`totalLiab`/`longfmt`  
 > 
-> *Balance Sheets Statements Common Stock*  
+> **Balance Sheets Statements Common Stock**  
 > /`balanceSheetStatements`/`commonStock`  
 > /`balanceSheetStatements`/`commonStock`/`raw`  
 > /`balanceSheetStatements`/`commonStock`/`fmt`  
 > /`balanceSheetStatements`/`commonStock`/`longfmt`  
 > 
-> *Balance Sheets Statements Retained Earnings*  
+> **Balance Sheets Statements Retained Earnings**  
 > /`balanceSheetStatements`/`retainedEarnings`  
 > /`balanceSheetStatements`/`retainedEarnings`/`raw`  
 > /`balanceSheetStatements`/`retainedEarnings`/`fmt`  
 > /`balanceSheetStatements`/`retainedEarnings`/`longfmt`  
 > 
-> *Balance Sheets Statements Treasurey Stock*  
+> **Balance Sheets Statements Treasurey Stock**  
 > /`balanceSheetStatements`/`treasuryStock`  
 > /`balanceSheetStatements`/`treasuryStock`/`raw`  
 > /`balanceSheetStatements`/`treasuryStock`/`fmt`  
 > /`balanceSheetStatements`/`treasuryStock`/`longfmt`  
 > 
-> *Balance Sheets Statements Capital Surplus*  
+> **Balance Sheets Statements Capital Surplus**  
 > /`balanceSheetStatements`/`capitalSurplus`  
 > /`balanceSheetStatements`/`capitalSurplus`/`raw`  
 > /`balanceSheetStatements`/`capitalSurplus`/`fmt`  
 > /`balanceSheetStatements`/`capitalSurplus`/`longfmt`  
 > 
-> *Balance Sheets Statements Other Stock Holder Equity*  
+> **Balance Sheets Statements Other Stock Holder Equity**  
 > /`balanceSheetStatements`/`otherStockholderEquity`  
 > /`balanceSheetStatements`/`otherStockholderEquity`/`raw`  
 > /`balanceSheetStatements`/`otherStockholderEquity`/`fmt`  
 > /`balanceSheetStatements`/`otherStockholderEquity`/`longfmt`  
 > 
-> *Balance Sheets Statements Total Stock Holder Equity*  
+> **Balance Sheets Statements Total Stock Holder Equity**  
 > /`balanceSheetStatements`/`totalStockholderEquity`  
 > /`balanceSheetStatements`/`totalStockholderEquity`/`raw`  
 > /`balanceSheetStatements`/`totalStockholderEquity`/`fmt`  
 > /`balanceSheetStatements`/`totalStockholderEquity`/`longfmt`  
 > 
-> *Balance Sheets Statements Net Tangible Assets*  
+> **Balance Sheets Statements Net Tangible Assets**  
 > /`balanceSheetStatements`/`netTangibleAssets`  
 > /`balanceSheetStatements`/`netTangibleAssets`/`raw`  
 > /`balanceSheetStatements`/`netTangibleAssets`/`fmt`  
 > /`balanceSheetStatements`/`netTangibleAssets`/`longfmt`  
 > 
-> *Balance Sheets Statements Short Long Term Debt*  
+> **Balance Sheets Statements Short Long Term Debt**  
 > /`balanceSheetStatements`/`shortLongTermDebt`  
 > /`balanceSheetStatements`/`shortLongTermDebt`/`raw`  
 > /`balanceSheetStatements`/`shortLongTermDebt`/`fmt`  
 > /`balanceSheetStatements`/`shortLongTermDebt`/`longfmt`
 > 
-> *Maximum number of seconds results of the Balance Sheets History query can be cached*  
+> **Max Age** *Maximum number of seconds results of the Balance Sheets History query can be cached*  
 > /`maxAge`
 
 
@@ -331,168 +331,168 @@ Learn more about corporate balance sheets on [Investopedia](https://www.investop
 `/quoteSummary/result/balanceSheetHistoryQuarterly` + **Nested Data** (*optional*)  
 
 **Nested Data:**  
-> *Balance Sheet Statements (All Data)*  
+> **Balance Sheet Statements (All Data)**  
 > /`balanceSheetStatements`  
 > 
-> *Maximum number of seconds results of the balanceSheetsStatements query can be cached*  
+> **Max Age** *Maximum number of seconds results of the balanceSheetsStatements query can be cached*  
 > /`balanceSheetStatements`/`maxAge`  
 > 
-> *Balance Sheets Statements End Date*  
+> **Balance Sheets Statements End Date**  
 > /`balanceSheetStatements`/`endDate`  
 > /`balanceSheetStatements`/`endDate`/`raw`  
 > /`balanceSheetStatements`/`endDate`/`fmt`  
 > 
-> *Balance Sheets Statements Cash*  
+> **Balance Sheets Statements Cash**  
 > /`balanceSheetStatements`/`cash`  
 > /`balanceSheetStatements`/`cash`/`raw`  
 > /`balanceSheetStatements`/`cash`/`fmt`  
 > /`balanceSheetStatements`/`cash`/`longfmt`  
 > 
-> *Balance Sheets Statements Short Term Investments*  
+> **Balance Sheets Statements Short Term Investments**  
 > /`balanceSheetStatements`/`shortTermInvestments`  
 > /`balanceSheetStatements`/`shortTermInvestments`/`raw`  
 > /`balanceSheetStatements`/`shortTermInvestments`/`fmt`  
 > /`balanceSheetStatements`/`shortTermInvestments`/`longfmt`  
 > 
-> *Balance Sheets Statements SNet Receivables*  
+> **Balance Sheets Statements SNet Receivables**  
 > /`balanceSheetStatements`/`netReceivables`  
 > /`balanceSheetStatements`/`netReceivables`/`raw`  
 > /`balanceSheetStatements`/`netReceivables`/`fmt`  
 > /`balanceSheetStatements`/`netReceivables`/`longfmt`  
 > 
-> *Balance Sheets Statements Inventory*  
+> **Balance Sheets Statements Inventory**  
 > /`balanceSheetStatements`/`inventory`  
 > /`balanceSheetStatements`/`inventory`/`raw`  
 > /`balanceSheetStatements`/`inventory`/`fmt`  
 > /`balanceSheetStatements`/`inventory`/`longfmt`  
 > 
-> *Balance Sheets Statements Total Current Assets*  
+> **Balance Sheets Statements Total Current Assets**  
 > /`balanceSheetStatements`/`totalCurrentAssets`  
 > /`balanceSheetStatements`/`totalCurrentAssets`/`raw`  
 > /`balanceSheetStatements`/`totalCurrentAssets`/`fmt`  
 > /`balanceSheetStatements`/`totalCurrentAssets`/`longfmt`  
 > 
-> *Balance Sheets Statements Property Plant Equipment*  
+> **Balance Sheets Statements Property Plant Equipment**  
 > /`balanceSheetStatements`/`propertyPlantEquipment`  
 > /`balanceSheetStatements`/`propertyPlantEquipment`/`raw`  
 > /`balanceSheetStatements`/`propertyPlantEquipment`/`fmt`  
 > /`balanceSheetStatements`/`propertyPlantEquipment`/`longfmt`  
 > 
-> *Balance Sheets Statements Goodwill*  
+> **Balance Sheets Statements Goodwill**  
 > /`balanceSheetStatements`/`goodwill`  
 > /`balanceSheetStatements`/`goodwill`/`raw`  
 > /`balanceSheetStatements`/`goodwill`/`fmt`  
 > /`balanceSheetStatements`/`goodwill`/`longfmt`  
 > 
-> *Balance Sheets Statements Intangible Assets*  
+> **Balance Sheets Statements Intangible Assets**  
 > /`balanceSheetStatements`/`intangibleAssets`  
 > /`balanceSheetStatements`/`intangibleAssets`/`raw`  
 > /`balanceSheetStatements`/`intangibleAssets`/`fmt`  
 > /`balanceSheetStatements`/`intangibleAssets`/`longfmt`  
 > 
-> *Balance Sheets Statements Other Assets*  
+> **Balance Sheets Statements Other Assets**  
 > /`balanceSheetStatements`/`otherAssets`  
 > /`balanceSheetStatements`/`otherAssets`/`raw`  
 > /`balanceSheetStatements`/`otherAssets`/`fmt`  
 > /`balanceSheetStatements`/`otherAssets`/`longfmt`  
 > 
-> *Balance Sheets Statements Deferred Long Term Asset Charges*  
+> **Balance Sheets Statements Deferred Long Term Asset Charges**  
 > /`balanceSheetStatements`/`deferredLongTermAssetCharges`  
 > /`balanceSheetStatements`/`deferredLongTermAssetCharges`/`raw`  
 > /`balanceSheetStatements`/`deferredLongTermAssetCharges`/`fmt`  
 > /`balanceSheetStatements`/`deferredLongTermAssetCharges`/`longfmt`  
 > 
-> *Balance Sheets Statements Total Assets*  
+> **Balance Sheets Statements Total Assets**  
 > /`balanceSheetStatements`/`totalAssets`  
 > /`balanceSheetStatements`/`totalAssets`/`raw`  
 > /`balanceSheetStatements`/`totalAssets`/`fmt`  
 > /`balanceSheetStatements`/`totalAssets`/`longfmt`  
 > 
-> *Balance Sheets Statements Accounts Payable*  
+> **Balance Sheets Statements Accounts Payable**  
 > /`balanceSheetStatements`/`accountsPayable`  
 > /`balanceSheetStatements`/`accountsPayable`/`raw`  
 > /`balanceSheetStatements`/`accountsPayable`/`fmt`  
 > /`balanceSheetStatements`/`accountsPayable`/`longfmt`  
 > 
-> *Balance Sheets Statements Other Current Liabilities*  
+> **Balance Sheets Statements Other Current Liabilities**  
 > /`balanceSheetStatements`/`otherCurrentLiab`  
 > /`balanceSheetStatements`/`otherCurrentLiab`/`raw`  
 > /`balanceSheetStatements`/`otherCurrentLiab`/`fmt`  
 > /`balanceSheetStatements`/`otherCurrentLiab`/`longfmt`  
 > 
-> *Balance Sheets Statements Long Term Debt*  
+> **Balance Sheets Statements Long Term Debt**  
 > /`balanceSheetStatements`/`longTermDebt`  
 > /`balanceSheetStatements`/`longTermDebt`/`raw`  
 > /`balanceSheetStatements`/`longTermDebt`/`fmt`  
 > /`balanceSheetStatements`/`longTermDebt`/`longfmt`  
 > 
-> *Balance Sheets Statements Other Liabilities*  
+> **Balance Sheets Statements Other Liabilities**  
 > /`balanceSheetStatements`/`otherLiab`  
 > /`balanceSheetStatements`/`otherLiab`/`raw`  
 > /`balanceSheetStatements`/`otherLiab`/`fmt`  
 > /`balanceSheetStatements`/`otherLiab`/`longfmt`  
 > 
-> *Balance Sheets Statements Total Current Liabilities*  
+> **Balance Sheets Statements Total Current Liabilities**  
 > /`balanceSheetStatements`/`totalCurrentLiabilities`  
 > /`balanceSheetStatements`/`totalCurrentLiabilities`/`raw`  
 > /`balanceSheetStatements`/`totalCurrentLiabilities`/`fmt`  
 > /`balanceSheetStatements`/`totalCurrentLiabilities`/`longfmt`  
 > 
-> *Balance Sheets Statements Total Liabilities*  
+> **Balance Sheets Statements Total Liabilities**  
 > /`balanceSheetStatements`/`totalLiab`  
 > /`balanceSheetStatements`/`totalLiab`/`raw`  
 > /`balanceSheetStatements`/`totalLiab`/`fmt`  
 > /`balanceSheetStatements`/`totalLiab`/`longfmt`  
 > 
-> *Balance Sheets Statements Common Stock*  
+> **Balance Sheets Statements Common Stock**  
 > /`balanceSheetStatements`/`commonStock`  
 > /`balanceSheetStatements`/`commonStock`/`raw`  
 > /`balanceSheetStatements`/`commonStock`/`fmt`  
 > /`balanceSheetStatements`/`commonStock`/`longfmt`  
 > 
-> *Balance Sheets Statements Retained Earnings*  
+> **Balance Sheets Statements Retained Earnings**  
 > /`balanceSheetStatements`/`retainedEarnings`  
 > /`balanceSheetStatements`/`retainedEarnings`/`raw`  
 > /`balanceSheetStatements`/`retainedEarnings`/`fmt`  
 > /`balanceSheetStatements`/`retainedEarnings`/`longfmt`  
 > 
-> *Balance Sheets Statements Treasurey Stock*  
+> **Balance Sheets Statements Treasurey Stock**  
 > /`balanceSheetStatements`/`treasuryStock`  
 > /`balanceSheetStatements`/`treasuryStock`/`raw`  
 > /`balanceSheetStatements`/`treasuryStock`/`fmt`  
 > /`balanceSheetStatements`/`treasuryStock`/`longfmt`  
 > 
-> *Balance Sheets Statements Capital Surplus*  
+> **Balance Sheets Statements Capital Surplus**  
 > /`balanceSheetStatements`/`capitalSurplus`  
 > /`balanceSheetStatements`/`capitalSurplus`/`raw`  
 > /`balanceSheetStatements`/`capitalSurplus`/`fmt`  
 > /`balanceSheetStatements`/`capitalSurplus`/`longfmt`  
 > 
-> *Balance Sheets Statements Other Stock Holder Equity*  
+> **Balance Sheets Statements Other Stock Holder Equity**  
 > /`balanceSheetStatements`/`otherStockholderEquity`  
 > /`balanceSheetStatements`/`otherStockholderEquity`/`raw`  
 > /`balanceSheetStatements`/`otherStockholderEquity`/`fmt`  
 > /`balanceSheetStatements`/`otherStockholderEquity`/`longfmt`  
 > 
-> *Balance Sheets Statements Total Stock Holder Equity*  
+> **Balance Sheets Statements Total Stock Holder Equity**  
 > /`balanceSheetStatements`/`totalStockholderEquity`  
 > /`balanceSheetStatements`/`totalStockholderEquity`/`raw`  
 > /`balanceSheetStatements`/`totalStockholderEquity`/`fmt`  
 > /`balanceSheetStatements`/`totalStockholderEquity`/`longfmt`  
 > 
-> *Balance Sheets Statements Net Tangible Assets*  
+> **Balance Sheets Statements Net Tangible Assets**  
 > /`balanceSheetStatements`/`netTangibleAssets`  
 > /`balanceSheetStatements`/`netTangibleAssets`/`raw`  
 > /`balanceSheetStatements`/`netTangibleAssets`/`fmt`  
 > /`balanceSheetStatements`/`netTangibleAssets`/`longfmt`  
 > 
-> *Balance Sheets Statements Short Long Term Debt*  
+> **Balance Sheets Statements Short Long Term Debt**  
 > /`balanceSheetStatements`/`shortLongTermDebt`  
 > /`balanceSheetStatements`/`shortLongTermDebt`/`raw`  
 > /`balanceSheetStatements`/`shortLongTermDebt`/`fmt`  
 > /`balanceSheetStatements`/`shortLongTermDebt`/`longfmt`
 > 
-> *Maximum number of seconds results of the balanceSheetHistoryQuarterly query can be cached*  
+> **Max Age** *Maximum number of seconds results of the balanceSheetHistoryQuarterly query can be cached*  
 > /`maxAge`
 
 
@@ -503,56 +503,56 @@ The calendarEvents module displays data from the company's [Upcoming Earnings & 
 `/quoteSummary/result/calendarEvents` + **Nested Data** (*optional*)  
 
 **Nested Data:**  
-> *Maximum number of seconds results of the calendarEvents query can be cached*  
+> **Max Age** *Maximum number of seconds results of the calendarEvents query can be cached*  
 > /`maxAge`  
 > 
-> *Upcoming Earnings (All Data)*  
+> **Upcoming Earnings (All Data)**  
 > /`earnings`  
 > 
-> *Upcoming Earnings Date*  
+> **Upcoming Earnings Date**  
 > /`earnings`/`earningsDate`  
 > /`earnings`/`earningsDate`/`raw`  
 > /`earnings`/`earningsDate`/`fmt`  
 > 
-> *Upcoming Earnings Average*  
+> **Upcoming Earnings Average**  
 > /`earnings`/`earningsAverage`  
 > /`earnings`/`earningsAverage`/`raw`  
 > /`earnings`/`earningsAverage`/`fmt`  
 > 
-> *Upcoming Earnings Low*  
+> **Upcoming Earnings Low**  
 > /`earnings`/`earningsLow`  
 > /`earnings`/`earningsLow`/`raw`  
 > /`earnings`/`earningsLow`/`fmt`  
 > 
-> *Upcoming Earnings High*  
+> **Upcoming Earnings High**  
 > /`earnings`/`earningsHigh`  
 > /`earnings`/`earningsHigh`/`raw`  
 > /`earnings`/`earningsHigh`/`fmt`  
 > 
-> *Upcoming Revenue Average*  
+> **Upcoming Revenue Average**  
 > /`earnings`/`revenueAverage`  
 > /`earnings`/`revenueAverage`/`raw`  
 > /`earnings`/`revenueAverage`/`fmt`  
 > /`earnings`/`revenueAverage`/`longfmt`  
 > 
-> *Upcoming Revenue Low*  
+> **Upcoming Revenue Low**  
 > /`earnings`/`revenueLow`  
 > /`earnings`/`revenueLow`/`raw`  
 > /`earnings`/`revenueLow`/`fmt`  
 > /`earnings`/`revenueLow`/`longfmt`  
 > 
-> *Upcoming Revenue High*  
+> **Upcoming Revenue High**  
 > /`earnings`/`revenueHigh`  
 > /`earnings`/`revenueHigh`/`raw`  
 > /`earnings`/`revenueHigh`/`fmt`  
 > /`earnings`/`revenueHigh`/`longfmt`  
 > 
-> *Upcoming Ex-dividend Date*  
+> **Upcoming Ex-dividend Date**  
 > /`exDividendDate`  
 > /`exDividendDate`/`raw`  
 > /`exDividendDate`/`fmt`  
 > 
-> *Upcoming Dividend Date*  
+> **Upcoming Dividend Date**  
 > /`exDividendDate`  
 > /`exDividendDate`/`raw`  
 > /`exDividendDate`/`fmt`  
@@ -567,132 +567,132 @@ Learn more about cash flow on [Investopedia](https://www.investopedia.com/invest
 `/quoteSummary/result/cashflowStatementHistory` + **Nested Data** (*optional*)  
 
 **Nested Data:**  
-> *Cash Flow Statements (All Data)*  
+> **Cash Flow Statements (All Data)**  
 > /`cashflowStatements`  
 > 
-> *Maximum number of seconds results of the cashflowStatements query can be cached*  
+> **Max Age** *Maximum number of seconds results of the cashflowStatements query can be cached*  
 > /`cashflowStatements`/`maxAge`  
 > 
-> *Cash Flow Statements End Date*  
+> **Cash Flow Statements End Date**  
 > /`cashflowStatements`/`endDate`  
 > /`cashflowStatements`/`endDate`/`raw`  
 > /`cashflowStatements`/`endDate`/`fmt`  
 > 
-> *Cash Flow Statements Net Income*  
+> **Cash Flow Statements Net Income**  
 > /`cashflowStatements`/`netIncome`  
 > /`cashflowStatements`/`netIncome`/`raw`  
 > /`cashflowStatements`/`netIncome`/`fmt`  
 > /`cashflowStatements`/`netIncome`/`longfmt`  
 > 
-> *Cash Flow Statements Depreciation*  
+> **Cash Flow Statements Depreciation**  
 > /`cashflowStatements`/`depreciation`  
 > /`cashflowStatements`/`depreciation`/`raw`  
 > /`cashflowStatements`/`depreciation`/`fmt`  
 > /`cashflowStatements`/`depreciation`/`longfmt`  
 > 
-> *Cash Flow Statements change to Net Income*  
+> **Cash Flow Statements change to Net Income**  
 > /`cashflowStatements`/`changeToNetIncome`  
 > /`cashflowStatements`/`changeToNetIncome`/`raw`  
 > /`cashflowStatements`/`changeToNetIncome`/`fmt`  
 > /`cashflowStatements`/`changeToNetIncome`/`longfmt`  
 > 
-> *Cash Flow Statements change to Accounts Receivables*  
+> **Cash Flow Statements change to Accounts Receivables**  
 > /`cashflowStatements`/`changeToAccountReceivables`  
 > /`cashflowStatements`/`changeToAccountReceivables`/`raw`  
 > /`cashflowStatements`/`changeToAccountReceivables`/`fmt`  
 > /`cashflowStatements`/`changeToAccountReceivables`/`longfmt`  
 > 
-> *Cash Flow Statements change to Liabilities*  
+> **Cash Flow Statements change to Liabilities**  
 > /`cashflowStatements`/`changeToLiabilities`  
 > /`cashflowStatements`/`changeToLiabilities`/`raw`  
 > /`cashflowStatements`/`changeToLiabilities`/`fmt`  
 > /`cashflowStatements`/`changeToLiabilities`/`longfmt`  
 > 
-> *Cash Flow Statements change to Inventory*  
+> **Cash Flow Statements change to Inventory**  
 > /`cashflowStatements`/`changeToInventory`  
 > /`cashflowStatements`/`changeToInventory`/`raw`  
 > /`cashflowStatements`/`changeToInventory`/`fmt`  
 > /`cashflowStatements`/`changeToInventory`/`longfmt`  
 > 
-> *Cash Flow Statements change to Operating Activities*  
+> **Cash Flow Statements change to Operating Activities**  
 > /`cashflowStatements`/`changeToOperatingActivities`  
 > /`cashflowStatements`/`changeToOperatingActivities`/`raw`  
 > /`cashflowStatements`/`changeToOperatingActivities`/`fmt`  
 > /`cashflowStatements`/`changeToOperatingActivities`/`longfmt`  
 > 
-> *Cash Flow Statements Total Cash from Operating Activities*  
+> **Cash Flow Statements Total Cash from Operating Activities**  
 > /`cashflowStatements`/`totalCashFromOperatingActivities`  
 > /`cashflowStatements`/`totalCashFromOperatingActivities`/`raw`  
 > /`cashflowStatements`/`totalCashFromOperatingActivities`/`fmt`  
 > /`cashflowStatements`/`totalCashFromOperatingActivities`/`longfmt`  
 > 
-> *Cash Flow Statements Capital Expenditures*  
+> **Cash Flow Statements Capital Expenditures**  
 > /`cashflowStatements`/`capitalExpenditures`  
 > /`cashflowStatements`/`capitalExpenditures`/`raw`  
 > /`cashflowStatements`/`capitalExpenditures`/`fmt`  
 > /`cashflowStatements`/`capitalExpenditures`/`longfmt`  
 > 
-> *Cash Flow Statements Investments*  
+> **Cash Flow Statements Investments**  
 > /`cashflowStatements`/`investments`  
 > /`cashflowStatements`/`investments`/`raw`  
 > /`cashflowStatements`/`investments`/`fmt`  
 > /`cashflowStatements`/`investments`/`longfmt`  
 > 
-> *Cash Flow Statements Total Cash Flow from Investment Activites*  
+> **Cash Flow Statements Total Cash Flow from Investment Activites**  
 > /`cashflowStatements`/`totalCashflowsFromInvestingActivities`  
 > /`cashflowStatements`/`totalCashflowsFromInvestingActivities`/`raw`  
 > /`cashflowStatements`/`totalCashflowsFromInvestingActivities`/`fmt`  
 > /`cashflowStatements`/`totalCashflowsFromInvestingActivities`/`longfmt`  
 > 
-> *Cash Flow Statements Dividends Paid*  
+> **Cash Flow Statements Dividends Paid**  
 > /`cashflowStatements`/`dividendsPaid`  
 > /`cashflowStatements`/`dividendsPaid`/`raw`  
 > /`cashflowStatements`/`dividendsPaid`/`fmt`  
 > /`cashflowStatements`/`dividendsPaid`/`longfmt`  
 > 
-> *Cash Flow Statements Total Cash from Financing Activities*  
+> **Cash Flow Statements Total Cash from Financing Activities**  
 > /`cashflowStatements`/`totalCashFromFinancingActivities`  
 > /`cashflowStatements`/`totalCashFromFinancingActivities`/`raw`  
 > /`cashflowStatements`/`totalCashFromFinancingActivities`/`fmt`  
 > /`cashflowStatements`/`totalCashFromFinancingActivities`/`longfmt`  
 > 
-> *Cash Flow Statements Change in Cash*  
+> **Cash Flow Statements Change in Cash**  
 > /`cashflowStatements`/`changeInCash`  
 > /`cashflowStatements`/`changeInCash`/`raw`  
 > /`cashflowStatements`/`changeInCash`/`fmt`  
 > /`cashflowStatements`/`changeInCash`/`longfmt`  
 > 
-> *Cash Flow Statements Repurchase of Stock*  
+> **Cash Flow Statements Repurchase of Stock**  
 > /`cashflowStatements`/`repurchaseOfStock`  
 > /`cashflowStatements`/`repurchaseOfStock`/`raw`  
 > /`cashflowStatements`/`repurchaseOfStock`/`fmt`  
 > /`cashflowStatements`/`repurchaseOfStock`/`longfmt`  
 > 
-> *Cash Flow Statements Issuance of Stock*  
+> **Cash Flow Statements Issuance of Stock**  
 > /`cashflowStatements`/`issuanceOfStock`  
 > /`cashflowStatements`/`issuanceOfStock`/`raw`  
 > /`cashflowStatements`/`issuanceOfStock`/`fmt`  
 > /`cashflowStatements`/`issuanceOfStock`/`longfmt`  
 > 
-> *Cash Flow Statements Net Borrowings*  
+> **Cash Flow Statements Net Borrowings**  
 > /`cashflowStatements`/`netBorrowings`  
 > /`cashflowStatements`/`netBorrowings`/`raw`  
 > /`cashflowStatements`/`netBorrowings`/`fmt`  
 > /`cashflowStatements`/`netBorrowings`/`longfmt`  
 > 
-> *Cash Flow Statements Other Cash Flows From Financing Activities*  
+> **Cash Flow Statements Other Cash Flows From Financing Activities**  
 > /`cashflowStatements`/`otherCashflowsFromFinancingActivities`  
 > /`cashflowStatements`/`otherCashflowsFromFinancingActivities`/`raw`  
 > /`cashflowStatements`/`otherCashflowsFromFinancingActivities`/`fmt`  
 > /`cashflowStatements`/`otherCashflowsFromFinancingActivities`/`longfmt`  
 > 
-> *Cash Flow Statements Other Cash Flows From Investing Activities*  
+> **Cash Flow Statements Other Cash Flows From Investing Activities**  
 > /`cashflowStatements`/`otherCashflowsFromInvestingActivities`  
 > /`cashflowStatements`/`otherCashflowsFromInvestingActivities`/`raw`  
 > /`cashflowStatements`/`otherCashflowsFromInvestingActivities`/`fmt`  
 > /`cashflowStatements`/`otherCashflowsFromInvestingActivities`/`longfmt`  
 > 
-> *Maximum number of seconds results of the cashflowStatementHistory query can be cached*  
+> **Max Age** *Maximum number of seconds results of the cashflowStatementHistory query can be cached*  
 > /`maxAge`  
 
 
@@ -705,132 +705,132 @@ Learn more about cash flow on [Investopedia](https://www.investopedia.com/invest
 `/quoteSummary/result/cashflowStatementHistoryQuarterly` + **Nested Data** (*optional*)  
 
 **Nested Data:**  
-> *Cash Flow Statements (All Data)*  
+> **Cash Flow Statements (All Data)**  
 > /`cashflowStatements`  
 > 
-> *Maximum number of seconds results of the cashflowStatements query can be cached*  
+> **Max Age** *Maximum number of seconds results of the cashflowStatements query can be cached*  
 > /`cashflowStatements`/`maxAge`  
 > 
-> *Cash Flow Statements End Date*  
+> **Cash Flow Statements End Date**  
 > /`cashflowStatements`/`endDate`  
 > /`cashflowStatements`/`endDate`/`raw`  
 > /`cashflowStatements`/`endDate`/`fmt`  
 > 
-> *Cash Flow Statements Net Income*  
+> **Cash Flow Statements Net Income**  
 > /`cashflowStatements`/`netIncome`  
 > /`cashflowStatements`/`netIncome`/`raw`  
 > /`cashflowStatements`/`netIncome`/`fmt`  
 > /`cashflowStatements`/`netIncome`/`longfmt`  
 > 
-> *Cash Flow Statements Depreciation*  
+> **Cash Flow Statements Depreciation**  
 > /`cashflowStatements`/`depreciation`  
 > /`cashflowStatements`/`depreciation`/`raw`  
 > /`cashflowStatements`/`depreciation`/`fmt`  
 > /`cashflowStatements`/`depreciation`/`longfmt`  
 > 
-> *Cash Flow Statements change to Net Income*  
+> **Cash Flow Statements change to Net Income**  
 > /`cashflowStatements`/`changeToNetIncome`  
 > /`cashflowStatements`/`changeToNetIncome`/`raw`  
 > /`cashflowStatements`/`changeToNetIncome`/`fmt`  
 > /`cashflowStatements`/`changeToNetIncome`/`longfmt`  
 > 
-> *Cash Flow Statements change to Accounts Receivables*  
+> **Cash Flow Statements change to Accounts Receivables**  
 > /`cashflowStatements`/`changeToAccountReceivables`  
 > /`cashflowStatements`/`changeToAccountReceivables`/`raw`  
 > /`cashflowStatements`/`changeToAccountReceivables`/`fmt`  
 > /`cashflowStatements`/`changeToAccountReceivables`/`longfmt`  
 > 
-> *Cash Flow Statements change to Liabilities*  
+> **Cash Flow Statements change to Liabilities**  
 > /`cashflowStatements`/`changeToLiabilities`  
 > /`cashflowStatements`/`changeToLiabilities`/`raw`  
 > /`cashflowStatements`/`changeToLiabilities`/`fmt`  
 > /`cashflowStatements`/`changeToLiabilities`/`longfmt`  
 > 
-> *Cash Flow Statements change to Inventory*  
+> **Cash Flow Statements change to Inventory**  
 > /`cashflowStatements`/`changeToInventory`  
 > /`cashflowStatements`/`changeToInventory`/`raw`  
 > /`cashflowStatements`/`changeToInventory`/`fmt`  
 > /`cashflowStatements`/`changeToInventory`/`longfmt`  
 > 
-> *Cash Flow Statements change to Operating Activities*  
+> **Cash Flow Statements change to Operating Activities**  
 > /`cashflowStatements`/`changeToOperatingActivities`  
 > /`cashflowStatements`/`changeToOperatingActivities`/`raw`  
 > /`cashflowStatements`/`changeToOperatingActivities`/`fmt`  
 > /`cashflowStatements`/`changeToOperatingActivities`/`longfmt`  
 > 
-> *Cash Flow Statements Total Cash from Operating Activities*  
+> **Cash Flow Statements Total Cash from Operating Activities**  
 > /`cashflowStatements`/`totalCashFromOperatingActivities`  
 > /`cashflowStatements`/`totalCashFromOperatingActivities`/`raw`  
 > /`cashflowStatements`/`totalCashFromOperatingActivities`/`fmt`  
 > /`cashflowStatements`/`totalCashFromOperatingActivities`/`longfmt`  
 > 
-> *Cash Flow Statements Capital Expenditures*  
+> **Cash Flow Statements Capital Expenditures**  
 > /`cashflowStatements`/`capitalExpenditures`  
 > /`cashflowStatements`/`capitalExpenditures`/`raw`  
 > /`cashflowStatements`/`capitalExpenditures`/`fmt`  
 > /`cashflowStatements`/`capitalExpenditures`/`longfmt`  
 > 
-> *Cash Flow Statements Investments*  
+> **Cash Flow Statements Investments**  
 > /`cashflowStatements`/`investments`  
 > /`cashflowStatements`/`investments`/`raw`  
 > /`cashflowStatements`/`investments`/`fmt`  
 > /`cashflowStatements`/`investments`/`longfmt`  
 > 
-> *Cash Flow Statements Total Cash Flow from Investment Activites*  
+> **Cash Flow Statements Total Cash Flow from Investment Activites**  
 > /`cashflowStatements`/`totalCashflowsFromInvestingActivities`  
 > /`cashflowStatements`/`totalCashflowsFromInvestingActivities`/`raw`  
 > /`cashflowStatements`/`totalCashflowsFromInvestingActivities`/`fmt`  
 > /`cashflowStatements`/`totalCashflowsFromInvestingActivities`/`longfmt`  
 > 
-> *Cash Flow Statements Dividends Paid*  
+> **Cash Flow Statements Dividends Paid**  
 > /`cashflowStatements`/`dividendsPaid`  
 > /`cashflowStatements`/`dividendsPaid`/`raw`  
 > /`cashflowStatements`/`dividendsPaid`/`fmt`  
 > /`cashflowStatements`/`dividendsPaid`/`longfmt`  
 > 
-> *Cash Flow Statements Total Cash from Financing Activities*  
+> **Cash Flow Statements Total Cash from Financing Activities**  
 > /`cashflowStatements`/`totalCashFromFinancingActivities`  
 > /`cashflowStatements`/`totalCashFromFinancingActivities`/`raw`  
 > /`cashflowStatements`/`totalCashFromFinancingActivities`/`fmt`  
 > /`cashflowStatements`/`totalCashFromFinancingActivities`/`longfmt`  
 > 
-> *Cash Flow Statements Change in Cash*  
+> **Cash Flow Statements Change in Cash**  
 > /`cashflowStatements`/`changeInCash`  
 > /`cashflowStatements`/`changeInCash`/`raw`  
 > /`cashflowStatements`/`changeInCash`/`fmt`  
 > /`cashflowStatements`/`changeInCash`/`longfmt`  
 > 
-> *Cash Flow Statements Repurchase of Stock*  
+> **Cash Flow Statements Repurchase of Stock**  
 > /`cashflowStatements`/`repurchaseOfStock`  
 > /`cashflowStatements`/`repurchaseOfStock`/`raw`  
 > /`cashflowStatements`/`repurchaseOfStock`/`fmt`  
 > /`cashflowStatements`/`repurchaseOfStock`/`longfmt`  
 > 
-> *Cash Flow Statements Issuance of Stock*  
+> **Cash Flow Statements Issuance of Stock**  
 > /`cashflowStatements`/`issuanceOfStock`  
 > /`cashflowStatements`/`issuanceOfStock`/`raw`  
 > /`cashflowStatements`/`issuanceOfStock`/`fmt`  
 > /`cashflowStatements`/`issuanceOfStock`/`longfmt`  
 > 
-> *Cash Flow Statements Net Borrowings*  
+> **Cash Flow Statements Net Borrowings**  
 > /`cashflowStatements`/`netBorrowings`  
 > /`cashflowStatements`/`netBorrowings`/`raw`  
 > /`cashflowStatements`/`netBorrowings`/`fmt`  
 > /`cashflowStatements`/`netBorrowings`/`longfmt`  
 > 
-> *Cash Flow Statements Other Cash Flows From Financing Activities*  
+> **Cash Flow Statements Other Cash Flows From Financing Activities**  
 > /`cashflowStatements`/`otherCashflowsFromFinancingActivities`  
 > /`cashflowStatements`/`otherCashflowsFromFinancingActivities`/`raw`  
 > /`cashflowStatements`/`otherCashflowsFromFinancingActivities`/`fmt`  
 > /`cashflowStatements`/`otherCashflowsFromFinancingActivities`/`longfmt`  
 > 
-> *Cash Flow Statements Other Cash Flows From Investing Activities*  
+> **Cash Flow Statements Other Cash Flows From Investing Activities**  
 > /`cashflowStatements`/`otherCashflowsFromInvestingActivities`  
 > /`cashflowStatements`/`otherCashflowsFromInvestingActivities`/`raw`  
 > /`cashflowStatements`/`otherCashflowsFromInvestingActivities`/`fmt`  
 > /`cashflowStatements`/`otherCashflowsFromInvestingActivities`/`longfmt`  
 > 
-> *Maximum number of seconds results of the cashflowStatementHistory query can be cached*  
+> **Max Age** *Maximum number of seconds results of the cashflowStatementHistory query can be cached*  
 > /`maxAge`  
 
 
@@ -842,17 +842,191 @@ Learn more about performing a fundamental analysis of a company on [Investopedia
 `/quoteSummary/result/defaultKeyStatistics` + **Nested Data** (*optional*)  
 
 **Nested Data:**  
-> *Maximum number of seconds results of the defaultKeyStatistics query can be cached*  
+> **Max Age** *Maximum number of seconds results of the defaultKeyStatistics query can be cached*  
 > /`maxAge`  
 > 
-> *Price Hint*  
+> **Price Hint**  
 > /`priceHint`  
 > /`priceHint`/`raw`  
 > /`priceHint`/`fmt`  
 > /`priceHint`/`longfmt`  
 > 
-> *Enterprise Value*  
+> **Enterprise Value**  
 > /`enterpriseValue`  
 > /`enterpriseValue`/`raw`  
 > /`enterpriseValue`/`fmt`  
 > /`enterpriseValue`/`longfmt`  
+> 
+> **Forward P/E**  
+> /`forwardPE`  
+> /`forwardPE`/`raw`  
+> /`forwardPE`/`fmt`  
+> 
+> **Profit Margins**  
+> /`profitMargins`  
+> /`profitMargins`/`raw`  
+> /`profitMargins`/`fmt`  
+> 
+> **Float Shares**  
+> /`floatShares`  
+> /`floatShares`/`raw`  
+> /`floatShares`/`fmt`  
+> /`floatShares`/`longFmt`  
+> 
+> **Shares Outstanding**  
+> /`sharesOutstanding`  
+> /`sharesOutstanding`/`raw`  
+> /`sharesOutstanding`/`fmt`  
+> /`sharesOutstanding`/`longFmt`  
+> 
+> **Shares Short**  
+> /`sharesShort`  
+> /`sharesShort`/`raw`  
+> /`sharesShort`/`fmt`  
+> /`sharesShort`/`longFmt`  
+> 
+> **Shares Short Prior Month**  
+> /`sharesShortPriorMonth`  
+> /`sharesShortPriorMonth`/`raw`  
+> /`sharesShortPriorMonth`/`fmt`  
+> /`sharesShortPriorMonth`/`longFmt`  
+> 
+> **Shares Short Previous Month**  
+> /`sharesShortPreviousMonthDate`  
+> /`sharesShortPreviousMonthDate`/`raw`  
+> /`sharesShortPreviousMonthDate`/`fmt`  
+> 
+> **Short Interest Date**  
+> /`dateShortInterest`  
+> /`dateShortInterest`/`raw`  
+> /`dateShortInterest`/`fmt`  
+> 
+> **Percent of Shares Outstanding**  
+> /`sharesPercentSharesOut`  
+> /`sharesPercentSharesOut`/`raw`  
+> /`sharesPercentSharesOut`/`fmt`  
+> 
+> **Percent of Shares Held by Insiders**  
+> /`heldPercentInsiders`  
+> /`heldPercentInsiders`/`raw`  
+> /`heldPercentInsiders`/`fmt`  
+> 
+> **Percent of Shares Held by Institutions**  
+> /`heldPercentInstitutions`  
+> /`heldPercentInstitutions`/`raw`  
+> /`heldPercentInstitutions`/`fmt`  
+> 
+> **Short Ratio**  
+> /`shortRatio`  
+> /`shortRatio`/`raw`  
+> /`shortRatio`/`fmt`  
+> 
+> **Short Percent of Float**  
+> /`shortPercentOfFloat`  
+> /`shortPercentOfFloat`/`raw`  
+> /`shortPercentOfFloat`/`fmt`  
+> 
+> **Beta**  
+> /`beta`  
+> /`beta`/`raw`  
+> /`beta`/`fmt`  
+> 
+> **Category**  
+> /`category`  
+> 
+> **Book Value**  
+> /`bookValue`  
+> /`bookValue`/`raw`  
+> /`bookValue`/`fmt`  
+> 
+> **Price to Book Ratio**  
+> /`priceToBook`  
+> /`priceToBook`/`raw`  
+> /`priceToBook`/`fmt`  
+> 
+> **Fund Family**  
+> /`fundFamily`  
+> 
+> **Legal Type**  
+> /`legalType`  
+> 
+> **Last Fiscal Year End Date**  
+> /`lastFiscalYearEnd`  
+> /`lastFiscalYearEnd`/`raw`  
+> /`lastFiscalYearEnd`/`fmt`  
+> 
+> **Next Fiscal Year End Date**  
+> /`nextFiscalYearEnd`  
+> /`nextFiscalYearEnd`/`raw`  
+> /`nextFiscalYearEnd`/`fmt`  
+> 
+> **Most Recent Quarter Date**  
+> /`mostRecentQuarter`  
+> /`mostRecentQuarter`/`raw`  
+> /`mostRecentQuarter`/`fmt`  
+> 
+> **Quarterly Growth Earnings**  
+> /`earningsQuarterlyGrowth`  
+> /`earningsQuarterlyGrowth`/`raw`  
+> /`earningsQuarterlyGrowth`/`fmt`  
+> 
+> **Net Income to Common**  
+> /`netIncomeToCommon`  
+> /`netIncomeToCommon`/`raw`  
+> /`netIncomeToCommon`/`fmt`  
+> /`netIncomeToCommon`/`longFmt`  
+> 
+> **Trailing EPS** *[more](https://www.investopedia.com/terms/t/trailingeps.asp#:~:text=Trailing%20earnings%20per%20share%20(EPS)%20is%20a%20company's%20earnings%20generated,period%20or%20four%20earnings%20releases.)*  
+> /`trailingEps`  
+> /`trailingEps`/`raw`  
+> /`trailingEps`/`fmt`  
+> 
+> **Forward EPS** *[more](https://www.investopedia.com/terms/f/fowardlookingearnings.asp)*  
+> /`forwardEps`  
+> /`forwardEps`/`raw`  
+> /`forwardEps`/`fmt`  
+> 
+> **PEG Ratio** *[more](https://www.investopedia.com/terms/p/pegratio.asp)*  
+> /`pegRatio`  
+> /`pegRatio`/`raw`  
+> /`pegRatio`/`fmt`  
+> 
+> **  
+> /`lastSplitFactor`  
+> 
+> **  
+> /`lastSplitDate`  
+> /`lastSplitDate`/`raw`  
+> /`lastSplitDate`/`fmt`  
+> 
+> **  
+> /`enterpriseToRevenue`  
+> /`enterpriseToRevenue`/`raw`  
+> /`enterpriseToRevenue`/`fmt`  
+> 
+> **  
+> /`enterpriseToEbitda`  
+> /`enterpriseToEbitda`/`raw`  
+> /`enterpriseToEbitda`/`fmt`  
+> 
+> **  
+> /`52WeekChange`  
+> /`52WeekChange`/`raw`  
+> /`52WeekChange`/`fmt`  
+> 
+> **  
+> /`SandP52WeekChange`  
+> /`SandP52WeekChange`/`raw`  
+> /`SandP52WeekChange`/`fmt`  
+> 
+> **  
+> /`lastDividendValue`  
+> /`lastDividendValue`/`raw`  
+> /`lastDividendValue`/`fmt`  
+> 
+> **  
+> /`lastDividendDate`  
+> /`lastDividendDate`/`raw`  
+> /`lastDividendDate`/`fmt`  
+
+
