@@ -1,4 +1,4 @@
-# Using ImportJSON to pull data from Yahoo Finance in Google Sheets
+# Using ImportJSON to pull data from Yahoo Finance into Google Sheets
 The following documentation is a comprehensive guide on how to use ImportJSON to display financial data from Yahoo Finance in your Google Sheets. Follow the steps below to get started!  
 
 ## Getting Started
