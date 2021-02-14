@@ -26,7 +26,7 @@ For Yahoo Finance the URL would look like the following, where **Symbol** is the
 
 For Example:  
 If your Google Sheet contains the symbol of a stock in cell **A1** , you could use the following formula in another cell to get *ALL* of the stock's "Key Statistics" from the Key Statistics module:  
-> `=ImportJSON("http://query2.finance.yahoo.com/v10/finance/quoteSummary/"&`**A1**`&"?modules=defaultKeyStatistics","/quoteSummary/result/defaultKeyStatistics","")`  
+> `=ImportJSON("http://query2.finance.yahoo.com/v10/finance/quoteSummary/"`&**A1**&`"?modules=defaultKeyStatistics","/quoteSummary/result/defaultKeyStatistics","")`  
   
   
 ### Query
