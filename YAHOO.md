@@ -59,7 +59,7 @@ If your Google Sheet contains the symbol of a stock in cell **A1**, you could us
   
   
 # Modules
-Yahoo Finance sorts company information into modules. Use the following table to locate the module containing data you're looking for.  
+Yahoo Finance sorts company information into modules.  
 
 | Description | Module Name |
 | ------------|------------ |
