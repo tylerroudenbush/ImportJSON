@@ -5,10 +5,11 @@ The following documentation is a comprehensive guide on how to use ImportJSON to
 1. Go to bradjasper's [ImportJSON.gs](https://github.com/bradjasper/ImportJSON/blob/master/ImportJSON.gs) file and copy the script  
 2. In Google Sheets open Script Editor in the Tools menu  
 3. Remove the existing script and paste in the script from the **ImportJSON.gs** file  
-```javascript
+```
+javascript
 function myFunction() {
 
-}
+	}
 ```
 4. Rename the project to 'ImportJSON' and click Save  
 5. Select the ImportJSON function and click Run to execute the code in the Script Editor  
