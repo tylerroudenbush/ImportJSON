@@ -1,100 +1,99 @@
 # Using ImportJSON to pull data from Yahoo Finance in Google Sheets
-The following documentation is a comprehensive guide on how to use ImportJSON to display financial data from Yahoo Finance in your Google Sheets. Follow the steps below to get started!
+The following documentation is a comprehensive guide on how to use ImportJSON to display financial data from Yahoo Finance in your Google Sheets. Follow the steps below to get started!  
 
 ## Getting Started
-1. Go to bradjasper's [ImportJSON.gs](https://github.com/bradjasper/ImportJSON/blob/master/ImportJSON.gs) file and copy the script
-2. In Google Sheets open Script Editor in the Tools menu
-3. Remove the existing script and paste in the script from the **ImportJSON.gs** file
+1. Go to bradjasper's [ImportJSON.gs](https://github.com/bradjasper/ImportJSON/blob/master/ImportJSON.gs) file and copy the script  
+2. In Google Sheets open Script Editor in the Tools menu  
+3. Remove the existing script and paste in the script from the **ImportJSON.gs** file  
 ```javascript
 function myFunction() {
 
 }
 ```
-4. Rename the project to 'ImportJSON' and click Save
-5. Select the ImportJSON function and click Run to execute the code in the Script Editor
-6. You will now be prompted to give permissions to the function (you will get an error because myFunction was removed... this is okay!)
-7. Congratulations! You can now use the `=ImportJSON(`[URL](#URL),[Query](#Query),[Options](#Options)`)` function in your google sheets
-  
-  
+4. Rename the project to 'ImportJSON' and click Save  
+5. Select the ImportJSON function and click Run to execute the code in the Script Editor  
+6. You will now be prompted to give permissions to the function (you will get an error because myFunction was removed... this is okay!)  
+7. Congratulations! You can now use the `=ImportJSON(`[URL](#URL),[Query](#Query),[Options](#Options)`)` function in your google sheets  
+
+
 ### URL
-The URL is the web address of the dataset you are looking for.
-> `=ImportJSON(`**URL**`,Query,Options)`
+The URL is the web address of the dataset you are looking for.  
+> `=ImportJSON(`**URL**`,Query,Options)`  
 
-For Yahoo Finance the URL would look like the following, where **Symbol** is the stock symbol and **Module** is the data. Replace **Module** with any high level Yahoo Finance module from the [Modules List](#Modules).
-> `http://query2.finance.yahoo.com/v10/finance/quoteSummary/`**Symbol**`?modules=`**Module**
+For Yahoo Finance the URL would look like the following, where **Symbol** is the stock symbol and **Module** is the data. Replace **Module** with any high level Yahoo Finance module from the [Modules List](#Modules).  
+> `http://query2.finance.yahoo.com/v10/finance/quoteSummary/`**Symbol**`?modules=`**Module**  
 
 
-For Example:
-
-If your Google Sheet contains the symbol of a stock in cell **A1** , you could use the following formula in another cell to get *ALL* of the stock's "Key Statistics" from the Key Statistics module:
-> `=ImportJSON("http://query2.finance.yahoo.com/v10/finance/quoteSummary/"&`**A1**`&"?modules=defaultKeyStatistics","/quoteSummary/result/defaultKeyStatistics","")`
+For Example:  
+If your Google Sheet contains the symbol of a stock in cell **A1** , you could use the following formula in another cell to get *ALL* of the stock's "Key Statistics" from the Key Statistics module:  
+> `=ImportJSON("http://query2.finance.yahoo.com/v10/finance/quoteSummary/"&`**A1**`&"?modules=defaultKeyStatistics","/quoteSummary/result/defaultKeyStatistics","")`  
   
   
 ### Query
-The query points to the exact location of data you'd like to display.
-> `=ImportJSON(URL,`**Query**`,Options)`
+The query points to the exact location of data you'd like to display.  
+> `=ImportJSON(URL,`**Query**`,Options)`  
 
-All Yahoo Finance queries start with `/quoteSummary/result/` and then you must select a "Module" that contains the data you are looking for. Replace **Module** with any high level module from the [Modules List](#Modules) and/or the exact location of the nested data you are looking for.
+All Yahoo Finance queries start with `/quoteSummary/result/` and then you must select a "Module" that contains the data you are looking for. Replace **Module** with any high level module from the [Modules List](#Modules) and/or the exact location of the nested data you are looking for.  
 
-For Example:
+For Example:  
+> `/quoteSummary/result/defaultKeyStatistics/price/raw`  
 
-> `/quoteSummary/result/defaultKeyStatistics/price/raw`
-  
-  
+
 ### Options
-Options can be used to alter the output of the data. You can enter multiple options seperated by commas.
-> `=ImportJSON(URL,Query,`**Options**`)`
+Options can be used to alter the output of the data. You can enter multiple options seperated by commas.  
+> `=ImportJSON(URL,Query,`**Options**`)`  
 
-- **noInherit**: Don't inherit values from parent elements
-- **noTruncate**: Don't truncate values
-- **rawHeaders**: Don't prettify headers
-- **noHeaders**: Don't include headers, only the data
-- **allHeaders**: Include all headers from the query parameter in the order they are listed
-- **debugLocation**: Prepend each value with the row & column it belongs in
+- **noInherit**: Don't inherit values from parent elements  
+- **noTruncate**: Don't truncate values  
+- **rawHeaders**: Don't prettify headers  
+- **noHeaders**: Don't include headers, only the data  
+- **allHeaders**: Include all headers from the query parameter in the order they are listed  
+- **debugLocation**: Prepend each value with the row & column it belongs in  
 
 For Example:
-If your Google Sheet contains the symbol of a stock in cell **A1**, you could use the following formula in another cell to get *only* the stock price:
-> =ImportJSON(`"http://query2.finance.yahoo.com/v10/finance/quoteSummary/`"&**A1**&"?modules=defaultKeyStatistics","/quoteSummary/result/defaultKeyStatistics/price/raw","noInheret,noTruncate,noHeaders")
+If your Google Sheet contains the symbol of a stock in cell **A1**, you could use the following formula in another cell to get *only* the stock price:  
+> =ImportJSON(`"http://query2.finance.yahoo.com/v10/finance/quoteSummary/"`&**A1**&`"?modules=defaultKeyStatistics","/quoteSummary/result/defaultKeyStatistics/price/raw","noInheret,noTruncate,noHeaders")`
   
   
   
   
 # Modules
-Yahoo Finance sorts company information into modules. Use the following table to locate the module containing data you're looking for.
-Description | Module Name
-------------|------------
-[Asset Profile](#asset-profile) | assetProfile
-[Balance Sheet History (Annual)](#balance-sheet-history-annual) | balanceSheetHistory
-[Balance Sheet History (Quarterly)](#balance-sheet-history-quarterly) | balanceSheetHistoryQuarterly
-[Calendar Events](#calendar-events) | calendarEvents
-[Cash Flow Statement History (Annual)](#cash-flow-statement-history-annual) | cashflowStatementHistory
-[Cash Flow Statement History (Quarterly)](#cash-flow-statement-history-quarterly) | cashflowStatementHistoryQuarterly
-[Key Statistics](#key-statistics) | defaultKeyStatistics
-[Earnings](#earnings) | earnings
-[Earnings History](#earnings-history) | earningsHistory
-[Earnings Trend](#earnings-trend) | earningsTrend
-[ESG Scores](#esg-scores) | esgScores
-[Financial Data](#financial-data) | financialData
-[Fund Ownership](#fund-ownership) | fundOwnership
-[Income Statement History (Annual)](#income-statement-history-annual) | incomeStatementHistory
-[Income Statement History (Quarterly)](#income-statement-history-quarterly) | incomeStatementHistoryQuarterly
-[Index Trend](#index-trend) | indexTrend
-[Industry Trend](#industry-trend) | indexTrend
-[Insider Holders](#insider-holders) | insiderHolders
-[Insider Transactions](#insider-transactions) | insiderTransactions
-[Institution Ownership](#institution-ownership) | institutionOwnership
-[Major Direct Holders](#major-direct-holders) | majorDirectHolders
-[Major Holders Breakdown](#major-holders-breakdown) | majorHoldersBreakdown
-[Net Share Purchase Activity](#net-share-purchase-activity) | netSharePurchaseActivity
-[Page Views](#page-views) | pageViews
-[Price](#price) | price
-[Quote Type](#quote-type) | quoteType
-[Recommendation Trend](#recommendation-trend) | recommendationTrend
-[SEC Filings](#sec-filings) | secFilings
-[Sector Trend](#sector-trend) | sectorTrend
-[Summary Detail](#summary-detail) | summaryDetail
-[Summary Profile](#summary-profile) | summaryProfile
-[Upgrade Downgrade History](#upgrade-downgrade-history) | upgradeDowngradeHistory
+Yahoo Finance sorts company information into modules. Use the following table to locate the module containing data you're looking for.  
+
+| Description | Module Name |
+| ------------|------------ |
+| [Asset Profile](#asset-profile) | assetProfile |
+| [Balance Sheet History (Annual)](#balance-sheet-history-annual) | balanceSheetHistory |
+| [Balance Sheet History (Quarterly)](#balance-sheet-history-quarterly) | balanceSheetHistoryQuarterly |
+| [Calendar Events](#calendar-events) | calendarEvents |
+| [Cash Flow Statement History (Annual)](#cash-flow-statement-history-annual) | cashflowStatementHistory |
+| [Cash Flow Statement History (Quarterly)](#cash-flow-statement-history-quarterly) | cashflowStatementHistoryQuarterly |
+| [Key Statistics](#key-statistics) | defaultKeyStatistics |
+| [Earnings](#earnings) | earnings |
+| [Earnings History](#earnings-history) | earningsHistory |
+| [Earnings Trend](#earnings-trend) | earningsTrend
+| [ESG Scores](#esg-scores) | esgScores |
+| [Financial Data](#financial-data) | financialData |
+| [Fund Ownership](#fund-ownership) | fundOwnership |
+| [Income Statement History (Annual)](#income-statement-history-annual) | incomeStatementHistory |
+| [Income Statement History (Quarterly)](#income-statement-history-quarterly) | incomeStatementHistoryQuarterly |
+| [Index Trend](#index-trend) | indexTrend |
+| [Industry Trend](#industry-trend) | indexTrend |
+| [Insider Holders](#insider-holders) | insiderHolders |
+| [Insider Transactions](#insider-transactions) | insiderTransactions |
+| [Institution Ownership](#institution-ownership) | institutionOwnership |
+| [Major Direct Holders](#major-direct-holders) | majorDirectHolders |
+| [Major Holders Breakdown](#major-holders-breakdown) | majorHoldersBreakdown |
+| [Net Share Purchase Activity](#net-share-purchase-activity) | netSharePurchaseActivity |
+| [Page Views](#page-views) | pageViews |
+| [Price](#price) | price |
+| [Quote Type](#quote-type) | quoteType |
+| [Recommendation Trend](#recommendation-trend) | recommendationTrend |
+| [SEC Filings](#sec-filings) | secFilings |
+| [Sector Trend](#sector-trend) | sectorTrend |
+| [Summary Detail](#summary-detail) | summaryDetail |
+| [Summary Profile](#summary-profile) | summaryProfile |
+| [Upgrade Downgrade History](#upgrade-downgrade-history) | upgradeDowngradeHistory |
 
 
 ## Data Formats
