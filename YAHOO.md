@@ -9,7 +9,7 @@ The following documentation is a comprehensive guide on how to use ImportJSON to
 javascript
 function myFunction() {
 
-	}
+ }
 ```
 4. Rename the project to 'ImportJSON' and click Save  
 5. Select the ImportJSON function and click Run to execute the code in the Script Editor  
